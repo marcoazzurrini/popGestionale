@@ -1,5 +1,5 @@
 export const DB_CONFIG = {
-  apiKey: "AIzaSyA5LTtPGLm4uGel0G89bAWtCY3ckGrB1Ls",
+  apiKey: "******************************************",
   authDomain: "popcomm-access-finder.firebaseapp.com",
   databaseURL: "https://popcomm-access-finder.firebaseio.com",
   projectId: "popcomm-access-finder",
