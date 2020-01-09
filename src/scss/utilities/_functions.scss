@@ -1,0 +1,8 @@
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function get-vw($target) {
+  $vw-context: (1000 * 0.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}

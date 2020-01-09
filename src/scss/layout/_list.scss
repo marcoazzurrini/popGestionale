@@ -1,0 +1,41 @@
+.list {
+  width: 65%;
+
+  &__label {
+    @include flexy(space-between, center);
+    padding: 0 $pm-lg $pm-lg $pm-lg;
+    border-radius: $bdr-sm;
+
+    &--item {
+      @extend %body-large;
+    }
+  }
+
+  &__access {
+    @extend %list-item;
+    margin-bottom: $pm-md;
+    transition: all 0.25s;
+
+    &:hover {
+      box-shadow: $direct-light;
+    }
+
+    &--item {
+      @extend %body-large;
+      font-weight: bold;
+      color: $grey-dark;
+    }
+
+    &--action {
+      img {
+        width: 25px;
+        margin-right: $pm-sm;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $small-laptop) {
+    @include list-mobile;
+  }
+}

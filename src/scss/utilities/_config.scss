@@ -1,0 +1,36 @@
+// FONTS
+$font-src: "https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:700&display=swap";
+$font-body: "Lato";
+$font-heading: "Raleway";
+
+$heading-primary: 46px;
+$body-lg: 22px;
+$body-md: 16px;
+$body-sm: 14px;
+
+$primary: #0c77f8;
+$white: #fff;
+$grey-dark: rgb(34, 34, 34);
+$grey: rgb(90, 90, 90);
+$grey-light: #ebebeb;
+
+// SIZES
+$content-w: 1400px;
+$logo-w: 185px;
+
+// PADDING & MARGINS
+$pm-sm: 10px;
+$pm-md: 30px;
+$pm-lg: 45px;
+$pm-xl: 150px;
+
+// SHADOWS
+$direct-light: 0px 3px 6px rgba(0, 0, 0, 0.25);
+$ambient-light: 0 10px 15px rgba(0, 0, 0, 0.15);
+
+// BORDER RADIUS
+$bdr-sm: 3px;
+
+// BREAKPOINTS
+$mobile: 900px;
+$small-laptop: 1300px;

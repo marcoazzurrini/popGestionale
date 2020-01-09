@@ -1,0 +1,46 @@
+@mixin newAccess-mobile {
+  @include gridy(1fr, repeat(5, minmax(auto, auto)), $pm-sm);
+  grid-template-areas:
+    "title"
+    "type"
+    "name"
+    "user"
+    "pass"
+    "btn";
+
+  .newAccess__title {
+    width: 100%;
+  }
+}
+
+@mixin list-mobile {
+  width: 100%;
+
+  &__access,
+  &__label {
+    padding: $pm-md $pm-sm;
+    margin-bottom: $pm-sm;
+
+    &--item {
+      font-size: $body-sm;
+    }
+  }
+}
+
+@mixin leftCol-mobile {
+  width: 100%;
+  margin-bottom: $pm-lg;
+}
+
+@mixin navbar-mobile {
+  height: auto;
+  padding: $pm-sm;
+
+  &__content {
+    @include flexy(center, flex-start, column);
+  }
+
+  &__brand {
+    margin-bottom: $pm-md;
+  }
+}

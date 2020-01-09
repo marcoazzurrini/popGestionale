@@ -1,0 +1,51 @@
+@import url($font-src);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-body;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-top: 200px;
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  @include flexy(space-between, flex-start);
+
+  @media only screen and (max-width: $small-laptop) {
+    flex-direction: column;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-heading;
+}
+
+p,
+a,
+input {
+  font-family: $font-body;
+}
+
+input {
+  outline: none;
+}

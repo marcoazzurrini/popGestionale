@@ -1,0 +1,58 @@
+.newAccess {
+  width: 100%;
+  max-width: 500px;
+
+  &__title {
+    @extend %heading-primary;
+    border-bottom: 6px solid $primary;
+    margin-bottom: $pm-lg;
+    padding-bottom: 3px;
+    grid-area: title;
+    width: 200%;
+  }
+
+  &__newAccess {
+    @include gridy(
+      repeat(2, minmax(auto, auto)),
+      repeat(5, minmax(auto, auto)),
+      $pm-sm
+    );
+    grid-template-areas:
+      "title title"
+      "name type"
+      "user user"
+      "pass pass"
+      "btn btn";
+
+    #newAccess-name {
+      grid-area: name;
+    }
+
+    #newAccess-type {
+      grid-area: type;
+    }
+
+    #newAccess-user {
+      grid-area: user;
+    }
+
+    #newAccess-pass {
+      grid-area: pass;
+    }
+
+    @media only screen and (max-width: $small-laptop) {
+      @include newAccess-mobile;
+    }
+  }
+
+  .btn {
+    grid-area: btn;
+  }
+
+  &__input {
+    @extend %input;
+    @extend %input-md;
+    @extend %inset-shadow;
+    margin-bottom: $pm-sm;
+  }
+}

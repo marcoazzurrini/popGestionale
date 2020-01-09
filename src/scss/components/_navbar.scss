@@ -1,0 +1,28 @@
+.mainNav {
+  width: 100vw;
+  height: 90px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  @include flexy(center, center);
+  background-color: $white;
+
+  &__content {
+    width: 90%;
+    @include flexy(space-between, center);
+  }
+
+  &__brand {
+    font-size: $body-lg;
+    font-weight: bold;
+    color: $primary;
+
+    &--grey {
+      color: $grey-dark;
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    @include navbar-mobile;
+  }
+}

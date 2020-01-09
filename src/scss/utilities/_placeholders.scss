@@ -1,0 +1,42 @@
+%heading-primary {
+  @include fluid-type($mobile, $small-laptop, $body-lg, $heading-primary);
+  font-weight: bold;
+  color: $grey-dark;
+}
+
+%body-large {
+  @include fluid-type($mobile, $small-laptop, $body-md, $body-lg);
+  color: $grey;
+}
+
+%list-item {
+  @include flexy(space-between, center);
+  padding: $pm-lg;
+  background: $grey-light;
+  border-radius: $bdr-sm;
+}
+
+%input {
+  border-radius: $bdr-sm;
+  border: none;
+  display: inline-block;
+  color: $grey;
+}
+%input-lg {
+  font-size: $body-md;
+  height: 60px;
+  padding-left: $pm-md;
+  box-shadow: $direct-light, $ambient-light;
+}
+
+%input-md {
+  font-size: $body-md;
+  height: 40px;
+  padding-left: $pm-md;
+  background-color: $grey-light;
+}
+
+%inset-shadow {
+  box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.2),
+    inset 0px -3px 3px rgba(255, 255, 255, 0.25);
+}
